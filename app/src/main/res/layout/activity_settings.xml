@@ -30,6 +30,7 @@
         android:layout_marginTop="32dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="4dp"
+        android:backgroundTint="?attr/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/settingsTitleTextView">
@@ -43,8 +44,8 @@
                 android:id="@+id/themeSettingsHeader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/appearance"
-                android:textColor="#333333"
+                android:text="@string/hello"
+                android:textColor="?attr/colorOnPrimary"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"

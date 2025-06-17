@@ -14,6 +14,11 @@ import com.example.theme_handle.dummy_data.Generator
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
+    override fun onStart() {
+        super.onStart()
+        SettingsActivity.applySavedDarkMode(this)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         WindowCompat.setDecorFitsSystemWindows(window, false)
